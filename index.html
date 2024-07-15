@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"> 
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <h2>Challenge Encriptador de texto</h2>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h1>Encriptador profesional</h1>
+            <textarea id="inputText" placeholder="Ingrese su texto que desea  incritar luego presione el boton  ENCRIPTAR" rows="10" class="textbox"></textarea>
+            <div class="button-container">
+                <button onclick="obtenerText();" class="button button-blue">Encriptar</button>
+                <button onclick="obtener();" class="button button-white">Desencriptar</button>
+            </div>
+            <textarea id="outputText" placeholder="Inge su texto que desea  Desencriptar luego presione el boton  DESENCRIPTAR" rows="10" class="textbox"></textarea>
+            <div class="button-container">
+                <button class="button button-blue" onclick="copiarTexto()">Copiar</button>
+                <button class="button button-white" onclick="limpiarTexto()">Limpiar</button>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Cifrador del Abecedario</h2>
+            <p id="cifrador-text" class="arial-black">
+                El cifrador del abecedario divide el alfabeto en dos partes iguales y invierte una de ellas. Cada letra en la primera mitad tiene una correspondencia directa con una letra invertida en la segunda mitad, mientras que la letra "n" permanece sin cambios en ambas partes.
+            </p>
+            <button  onclick="redirectToPage()"" class="button-more">Mira su lógica detrás</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-images">
+            <img src="git.png" alt="Image 1" class="footer-image">
+            <img src="linkedin.png" alt="Image 2" class="footer-image">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
